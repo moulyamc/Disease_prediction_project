@@ -1,0 +1,49 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pkl
+*.h5
+*.joblib
+
+# VS Code and PyCharm config
+.vscode/
+.idea/
+
+# Testing
+.coverage
+htmlcov/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environment vars
+.env
+*.env
+
+# Build folders
+build/
+dist/
+*.egg-info/
+
+# Others
+*.bak
