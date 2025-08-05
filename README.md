@@ -1,70 +1,50 @@
-# 🩺 Disease Prediction Project
+# 🩺 Disease Prediction Project  
+A simple GUI-based system that predicts diseases based on symptoms using Machine Learning. Built during an internship at Varcons Technologies Pvt Ltd.  
 
-A simple GUI-based system that predicts diseases based on symptoms using Machine Learning. Built during an internship at Varcons Technologies Pvt Ltd.
+## 🧠 Features  
+- Predicts one of 41 diseases based on user-input symptoms  
+- GUI built using Tkinter  
+- Uses Naive Bayes classifier (GaussianNB)  
+- Trained on a cleaned dataset of 4920 records and 132 features  
+- Final model saved as .pkl and used in live prediction  
 
----
+## 🚀 How to Run the Project  
+1. Clone the Repository  
+git clone https://github.com/moulyamc/Disease_prediction_project.git  
+cd Disease_prediction_project  
 
-## 🧠 Features
-- Predicts one of 41 diseases based on symptoms
-- GUI built using Tkinter
-- Uses Naive Bayes classifier (Gaussian)
-- Trained on a cleaned dataset of 4920 records and 132 features
+2. Install Dependencies  
+pip install -r requirements.txt  
 
----
+3. Train the Model (optional – only if gaussian_nb_model.pkl is missing)  
+python src/train_model.py  
 
-## 🚀 How to Run
+4. Launch the GUI  
+python src/GUI.py  
 
-1. **Install required packages**  
-   You can install dependencies using:
+## 🗂️ Project Structure  
+Disease_prediction_project/  
+├── data/  
+│   └── cleaned_file.csv  
+├── model/  
+│   └── gaussian_nb_model.pkl  
+├── src/  
+│   ├── train_model.py  
+│   └── GUI.py  
+├── requirements.txt  
+├── .gitignore  
+├── LICENSE  
+└── README.md  
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Run the GUI**
-
-   ```bash
-   python src/GUI.py
-   ```
-
----
-
-## 🗂️ Project Structure
-
-```
-Disease_prediction_project/
-├── data/
-│   └── cleaned_file.csv
-├── model/
-│   └── gaussian_nb_model.pkl
-├── src/
-│   ├── train_model.py
-│   ├── predict.py
-│   └── GUI.py
-├── notebooks/
-│   ├── Disease Prediction.ipynb
-│   └── GUI.ipynb
-├── README.md
-└── requirements.txt
-```
-
----
-
-## 🧪 ML Algorithms Used
-
+## 🧪 ML Algorithms Used  
 - Gaussian Naive Bayes  
-- Logistic Regression  
-- Random Forest *(optional in report)*
+- Logistic Regression (mentioned in report)  
+- Random Forest (optional/compared)  
 
----
+## 👩‍💻 Author  
+Moulya M C  
+B.E. in Computer Science, VTU  
 
-## 👩‍💻 Author
-
-**Moulya M C**  
-B.E. in Computer Science, VTU
-
----
-
-## 📝 License
-
-This project is for academic and demonstration purposes.
+## 📝 License  
+This project is licensed under the MIT License.  
+For academic and demonstration purposes.
